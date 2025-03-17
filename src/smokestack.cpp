@@ -35,7 +35,7 @@ void Smokestack::add(string token) {
 }
 
 void Smokestack::push(std::string token) {
-  lock_guard<mutex> lock(reservoir_mutex);
+  lock_guard<mutex> lock(stack_mutex);
   stack.push(token);
 }
 
