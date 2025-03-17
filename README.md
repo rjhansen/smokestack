@@ -55,8 +55,7 @@ strings get passed to Smokestack.**
 Smokestack. Be careful before trusting user-provided data without
 adequate vetting.
 
-# Build notes
-
+## Build notes
 Although it ships with a [CMake](https://www.cmake.org) build environment
 that should work, it doesn’t work, due to Emscripten’s CMake support
 requiring a tool Apple doesn‘t ship: `clang-scan-deps`. Other platforms
@@ -72,4 +71,5 @@ you to take it to a good home. Inside you’ll find:
 * the C++ source code
 * the WebAssembly
 * the Javascript
+* some SVG graphics
 * and an HTML page for testing.
